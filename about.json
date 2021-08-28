@@ -1,0 +1,15 @@
+{
+  "name": "Mint",
+  "about_url": null,
+  "license_url": null,
+  "color_schemes": {
+    "mint": {
+      "primary": "454545",
+      "secondary": "F6FBFC",
+      "tertiary": "4F8A7C",
+      "header_background": "ffffff",
+      "header_primary": "111111"
+    }
+  },
+  "components": ["https://github.com/discourse/discourse-showcased-categories.git","https://github.com/discourse/discourse-search-banner.git"]
+}
