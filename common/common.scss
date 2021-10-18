@@ -54,6 +54,7 @@ input[type="color"]:focus,
 .custom-homepage-columns {
   margin: 2em 0 2em 0;
   .col {
+    height: 30%;
     position: relative;
     @include border-radius;
     background: $color-white;
@@ -156,6 +157,14 @@ a {
   .category-boxes.with-logos.with-subcategories {
     grid-template-columns: 1fr;
   }
+}
+
+.category-list-item.category {
+  @include border-radius;
+  border-right: 1px solid var(--primary-low) !important;
+  box-shadow: 0 0 4px 0 rgba(0,0,0,.10);
+  margin: 0 0.59em 2em .59em;
+  background: white;
 }
 
 #create-topic {
