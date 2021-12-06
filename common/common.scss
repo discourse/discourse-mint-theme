@@ -54,7 +54,6 @@ input[type="color"]:focus,
 .custom-homepage-columns {
   margin: 2em 0 2em 0;
   .col {
-    height: 30%;
     position: relative;
     @include border-radius;
     background: $color-white;
@@ -253,6 +252,22 @@ a {
   }
 }
 
+.d-editor-button-bar .select-kit.dropdown-select-box .dropdown-select-box-header {
+  background: transparent;
+  color: var(--primary-medium);
+  border: 1px solid transparent;
+  border-radius: 0;
+  svg {
+    color: currentColor;
+  }
+  &:hover {
+    color: var(--secondary);
+    background: var(--tertiary-hover);
+    border: 1px solid var(--tertiary-hover);
+    border-radius: 5px;
+  }
+}
+
 .discourse-no-touch .btn:hover .d-icon, .discourse-no-touch .btn.btn-hover .d-icon {
   color: var(--tertiary-hover);
 }
@@ -260,6 +275,7 @@ a {
 .discourse-no-touch .btn:hover, .discourse-no-touch .btn.btn-hover {
   color: var(--secondary);
   background: var(--tertiary-hover);
+  border-radius: 5px;
   .fa {
     color: var(--secondary);
   }
