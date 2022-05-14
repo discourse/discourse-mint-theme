@@ -37,3 +37,9 @@ body:not(.navigation-categories):not(.navigation-topics) #main-outlet {
   transform: rotate(74deg);
   transform-origin: 0 100%;
 }
+
+.d-header {
+  height: 5em;
+  box-shadow: none;
+  background: black;
+}
