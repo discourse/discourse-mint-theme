@@ -83,7 +83,7 @@ input[type="color"]:focus,
       &:hover {
         background: var(--tertiary);
         color: var(--secondary);
-        box-shadow: 4px 4px $color-box-shadow;
+        box-shadow: 4px 4px 6px $color-box-shadow;
         transition: 0.3s;
         @include border-radius;
       }
@@ -198,7 +198,7 @@ a {
   &:hover {
     background: var(--tertiary);
     color: var(--secondary);
-    box-shadow: 4px 4px $color-box-shadow;
+    box-shadow: 4px 4px 6px $color-box-shadow;
     transition: all 0.3s ease-in-out;
     @include border-radius;
 
