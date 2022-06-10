@@ -1,5 +1,9 @@
 .navigation-categories {
-  .custom-search-banner {
-    display: none;
+  .search-banner {
+    margin: 1em;
+
+    .search-input {
+      border-color: transparent;
+    }
   }
 }

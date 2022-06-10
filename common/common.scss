@@ -121,6 +121,10 @@ input[type="color"]:focus,
   @include border-radius;
 }
 
+.search-widget .search-input {
+  @include border-radius;
+}
+
 .search-menu .search-context .show-help {
   color: $color-white;
 }
