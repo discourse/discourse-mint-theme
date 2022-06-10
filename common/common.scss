@@ -75,7 +75,7 @@ input[type="color"]:focus,
     .btn-more {
       color: var(--secondary);
       background: var(--tertiary);
-      transition: all 0.3s linear;
+      transition: all 0.25s ease-in-out;
       @include border-radius;
       text-transform: uppercase;
       border: 1px solid var(--tertiary);
@@ -186,7 +186,7 @@ a {
 #create-topic {
   color: var(--secondary);
   background: var(--tertiary);
-  transition: all 0.3s linear;
+  transition: all 0.3s ease-in-out;
   @include border-radius;
   text-transform: uppercase;
   border: 2px solid var(--tertiary);
@@ -199,7 +199,7 @@ a {
     background: var(--tertiary);
     color: var(--secondary);
     box-shadow: 4px 4px $color-box-shadow;
-    transition: all 0.3s linear;
+    transition: all 0.3s ease-in-out;
     @include border-radius;
 
     .fa {
@@ -248,7 +248,7 @@ a {
 
   &:hover {
     @include border-radius;
-    transition: all 0.3s linear;
+    transition: all 0.3s ease-in-out;
     background-color: transparent;
     color: var(--tertiary);
     border: 1px dashed var(--tertiary);
@@ -256,7 +256,7 @@ a {
 
   &.active {
     @include border-radius;
-    transition: all 0.3s linear;
+    transition: all 0.3s ease-in-out;
     background: $color-primary;
     color: var(--secondary);
     border: 1px solid $color-primary;
@@ -322,7 +322,7 @@ a {
 .btn-default {
   color: var(--secondary);
   background: var(--tertiary);
-  transition: all 0.3s linear;
+  transition: all 0.3s ease-in-out;
   @include border-radius;
   text-transform: uppercase;
   border: 1px solid var(--tertiary);
