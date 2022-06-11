@@ -61,7 +61,7 @@ input[type="color"]:focus,
     background: $color-white;
     padding: 2em 2em 1em;
     border-top: 8px solid $tertiary;
-    box-shadow: 0 8px 60px 0 rgba(0, 0, 0, .10), 0 12px 90px 0 rgba(0, 0, 0, .10);
+    box-shadow: 0 8px 60px 0 rgba(0, 0, 0, .05), 0 12px 90px 0 rgba(0, 0, 0, .05);
 
     .header-wrapper {
       color: var(--primary);
