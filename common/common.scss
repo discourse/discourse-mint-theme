@@ -119,6 +119,10 @@ input[type="color"]:focus,
   color: $color-white;
 }
 
+.search-menu .search-input {
+  border: 0;
+}
+
 .menu-panel .d-label {
   color: $color-black;
 }
