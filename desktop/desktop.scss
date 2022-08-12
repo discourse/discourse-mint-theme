@@ -1,15 +1,16 @@
-@import 'variables';
+@import "variables";
 
 body:not(.navigation-categories):not(.navigation-topics) #main-outlet {
   @include border-radius;
-  box-shadow: 0 8px 60px 0 rgba(103,151,255,.10), 0 12px 90px 0 rgba(133,255,103,.10);
+  box-shadow: 0 8px 60px 0 rgba(103, 151, 255, 0.1),
+    0 12px 90px 0 rgba(133, 255, 103, 0.1);
   padding: 2em;
   background-color: $color-white;
   border-top: 8px solid $tertiary;
-  margin-top: .8em;
+  margin-top: 0.8em;
 }
 
-#main-outlet:after  {
+#main-outlet:after {
   content: "";
   display: block;
   position: fixed;

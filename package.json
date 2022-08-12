@@ -1,0 +1,10 @@
+{
+  "name": "discourse-mint-theme",
+  "version": "0.0.1",
+  "repository": "https://github.com/discourse/discourse-mint-theme",
+  "author": "Discourse",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint-config-discourse": "^3.2.0"
+  }
+}
