@@ -57,7 +57,7 @@ input[type="color"]:focus,
   .col {
     position: relative;
     @include border-radius;
-    background: $color-white;
+    @include mint-card-bg;
     padding: 2em 2em 1em;
     border-top: 8px solid $tertiary;
     box-shadow: 0 8px 60px 0 rgba(103, 151, 255, 0.1),
@@ -79,7 +79,7 @@ input[type="color"]:focus,
       &:hover {
         background: var(--tertiary);
         color: var(--secondary);
-        box-shadow: 4px 4px $color-box-shadow;
+        box-shadow: 4px 4px var(--mint-hover-shadow);
         transition: 0.3s;
         @include border-radius;
       }
@@ -97,7 +97,7 @@ input[type="color"]:focus,
 }
 
 .category-box-inner {
-  background: $color-white;
+  @include mint-card-bg;
 }
 
 .navigation-topics {
@@ -106,7 +106,7 @@ input[type="color"]:focus,
     box-shadow: 0 8px 60px 0 rgba(103, 151, 255, 0.1),
       0 12px 90px 0 rgba(133, 255, 103, 0.1);
     padding: 2em;
-    background-color: $color-white;
+    @include mint-card-bg;
     border-top: 8px solid $tertiary;
     margin-top: 0.8em;
   }
@@ -119,7 +119,7 @@ input[type="color"]:focus,
 }
 
 .search-menu .search-context .show-help {
-  color: $color-white;
+  color: var(--primary-very-low);
 }
 
 .search-menu .search-input {
@@ -127,7 +127,7 @@ input[type="color"]:focus,
 }
 
 .menu-panel .d-label {
-  color: $color-black;
+  color: var(--primary);
 }
 
 a {
@@ -173,7 +173,7 @@ a {
   border-right: 1px solid var(--primary-low) !important;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
   margin: 0 0.59em 2em 0.59em;
-  background: white;
+  background: var(--primary-very-low);
 }
 
 #create-topic {
@@ -189,7 +189,7 @@ a {
   &:hover {
     background: var(--tertiary);
     color: var(--secondary);
-    box-shadow: 4px 4px $color-box-shadow;
+    box-shadow: var(--mint-hover-shadow);
     transition: all 0.3s linear;
     @include border-radius;
     .fa {
@@ -217,7 +217,7 @@ a {
 .list-controls .combo-box .combo-box-header {
   border: none;
   @include border-radius;
-  background-color: $color-white;
+  @include mint-card-bg;
 }
 
 .menu-panel .panel-body-bottom .btn {
@@ -243,9 +243,9 @@ a {
   &.active {
     @include border-radius;
     transition: all 0.3s linear;
-    background: $color-mint;
+    background: var(--mint-color-mint);
     color: var(--secondary);
-    border: 1px solid $color-mint;
+    border: 1px solid var(--mint-color-mint);
   }
 }
 
@@ -366,7 +366,7 @@ a:hover {
 
 .custom-search-banner-wrap h1,
 .custom-search-banner-wrap p {
-  color: $color-white;
+  color: var(--primary-very-low);
 }
 
 .btn[href] {
