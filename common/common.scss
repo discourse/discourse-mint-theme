@@ -17,7 +17,7 @@ input[type="tel"],
 input[type="color"],
 .d-editor-textarea-wrapper,
 .select-kit-header {
-  @include border-radius;
+  border-radius: var(--mint-border-radius);
 }
 
 input[type="text"]:focus,
@@ -39,7 +39,7 @@ input[type="color"]:focus,
 .select-kit.single-select.is-expanded .select-kit-header:not(.btn),
 .select-kit.single-select .select-kit-header:not(.btn):focus,
 .select-kit.single-select .select-kit-header:not(.btn):active {
-  @include border-radius;
+  border-radius: var(--mint-border-radius);
   box-shadow: none;
   outline: none;
 }
@@ -57,8 +57,8 @@ input[type="color"]:focus,
   margin: 2em 0 2em 0;
   .col {
     position: relative;
-    @include border-radius;
-    background: $color-white;
+    border-radius: var(--mint-border-radius);
+    @include mint-card-bg;
     padding: 2em 2em 1em;
     border-top: 8px solid $tertiary;
     box-shadow: 0 8px 60px 0 rgba(103, 151, 255, 0.1),
@@ -74,22 +74,22 @@ input[type="color"]:focus,
       color: var(--secondary);
       background: var(--tertiary);
       transition: all 0.3s linear;
-      @include border-radius;
+      border-radius: var(--mint-border-radius);
       text-transform: uppercase;
       border: 1px solid var(--tertiary);
       &:hover {
         background: var(--tertiary);
         color: var(--secondary);
-        box-shadow: 4px 4px $color-box-shadow;
+        box-shadow: 4px 4px var(--mint-hover-shadow);
         transition: 0.3s;
-        @include border-radius;
+        border-radius: var(--mint-border-radius);
       }
     }
   }
 }
 
 .navigation-categories .search-banner {
-  @include border-radius;
+  border-radius: var(--mint-border-radius);
   height: 350px;
   box-sizing: border-box;
   padding: 2.5em 0 3em;
@@ -98,16 +98,16 @@ input[type="color"]:focus,
 }
 
 .category-box-inner {
-  background: $color-white;
+  @include mint-card-bg;
 }
 
 .navigation-topics {
   .container.list-container {
-    @include border-radius;
+    border-radius: var(--mint-border-radius);
     box-shadow: 0 8px 60px 0 rgba(103, 151, 255, 0.1),
       0 12px 90px 0 rgba(133, 255, 103, 0.1);
     padding: 2em;
-    background-color: $color-white;
+    @include mint-card-bg;
     border-top: 8px solid $tertiary;
     margin-top: 0.8em;
   }
@@ -116,11 +116,11 @@ input[type="color"]:focus,
 .search-widget .search-context {
   padding: 10px;
   background-color: var(--tertiary-medium);
-  @include border-radius;
+  border-radius: var(--mint-border-radius);
 }
 
 .search-menu .search-context .show-help {
-  color: $color-white;
+  color: var(--primary-very-low);
 }
 
 .search-menu .search-input {
@@ -128,7 +128,7 @@ input[type="color"]:focus,
 }
 
 .menu-panel .d-label {
-  color: $color-black;
+  color: var(--primary);
 }
 
 a {
@@ -139,7 +139,7 @@ a {
   display: grid;
   grid-gap: 2em;
   grid-template-columns: 32% 32% 32%;
-  @include border-radius;
+  border-radius: var(--mint-border-radius);
   .category-box {
     width: 100%;
     margin: 0;
@@ -147,7 +147,7 @@ a {
     border: none;
     border-top: 8px solid;
     background: var(--secondary);
-    @include border-radius;
+    border-radius: var(--mint-border-radius);
     box-shadow: 0px 2px 3px 0px rgba(2, 47, 57, 0.14);
     .category-box-inner {
       border: none;
@@ -170,18 +170,18 @@ a {
 }
 
 .category-list-item.category {
-  @include border-radius;
+  border-radius: var(--mint-border-radius);
   border-right: 1px solid var(--primary-low) !important;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
   margin: 0 0.59em 2em 0.59em;
-  background: white;
+  background: var(--primary-very-low);
 }
 
 #create-topic {
   color: var(--secondary);
   background: var(--tertiary);
   transition: all 0.3s linear;
-  @include border-radius;
+  border-radius: var(--mint-border-radius);
   text-transform: uppercase;
   border: 2px solid var(--tertiary);
   .fa {
@@ -190,9 +190,9 @@ a {
   &:hover {
     background: var(--tertiary);
     color: var(--secondary);
-    box-shadow: 4px 4px $color-box-shadow;
+    box-shadow: var(--mint-hover-shadow);
     transition: all 0.3s linear;
-    @include border-radius;
+    border-radius: var(--mint-border-radius);
     .fa {
       color: var(--secondary);
     }
@@ -217,8 +217,8 @@ a {
 
 .list-controls .combo-box .combo-box-header {
   border: none;
-  @include border-radius;
-  background-color: $color-white;
+  border-radius: var(--mint-border-radius);
+  @include mint-card-bg;
 }
 
 .menu-panel .panel-body-bottom .btn {
@@ -233,26 +233,26 @@ a {
 
 .nav-pills li a {
   border: 1px solid transparent;
-  @include border-radius;
+  border-radius: var(--mint-border-radius);
   &:hover {
-    @include border-radius;
+    border-radius: var(--mint-border-radius);
     transition: all 0.3s linear;
     background-color: transparent;
     color: var(--tertiary);
     border: 1px dashed var(--tertiary);
   }
   &.active {
-    @include border-radius;
+    border-radius: var(--mint-border-radius);
     transition: all 0.3s linear;
-    background: $color-mint;
+    background: var(--mint-color-mint);
     color: var(--secondary);
-    border: 1px solid $color-mint;
+    border: 1px solid var(--mint-color-mint);
   }
 }
 
 .select-kit.dropdown-select-box .dropdown-select-box-header {
   background: var(--tertiary);
-  @include border-radius;
+  border-radius: var(--mint-border-radius);
   border: 1px solid var(--tertiary);
   color: var(--secondary);
   svg {
@@ -307,7 +307,7 @@ a {
   color: var(--secondary);
   background: var(--tertiary);
   transition: all 0.3s linear;
-  @include border-radius;
+  border-radius: var(--mint-border-radius);
   text-transform: uppercase;
   border: 1px solid var(--tertiary);
   .fa {
@@ -316,7 +316,7 @@ a {
 }
 
 .btn-primary {
-  @include border-radius;
+  border-radius: var(--mint-border-radius);
 }
 
 .discourse-no-touch .btn-danger:hover {
@@ -324,7 +324,7 @@ a {
 }
 
 .create {
-  @include border-radius;
+  border-radius: var(--mint-border-radius);
 }
 
 .select-kit .select-kit-row.is-selected {
@@ -334,7 +334,7 @@ a {
 .modal-inner-container,
 .edit-category-footer {
   .btn-primary {
-    @include border-radius;
+    border-radius: var(--mint-border-radius);
   }
 }
 
@@ -361,13 +361,13 @@ a:hover {
     color: var(--secondary);
   }
   .btn-primary {
-    @include border-radius;
+    border-radius: var(--mint-border-radius);
   }
 }
 
 .custom-search-banner-wrap h1,
 .custom-search-banner-wrap p {
-  color: $color-white;
+  color: var(--primary-very-low);
 }
 
 .btn[href] {
