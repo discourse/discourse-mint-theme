@@ -78,11 +78,8 @@ input[type="color"]:focus,
       text-transform: uppercase;
       border: 1px solid var(--tertiary);
       &:hover {
-        background: var(--tertiary);
         color: var(--secondary);
-        box-shadow: 4px 4px var(--mint-hover-shadow);
-        transition: 0.3s;
-        border-radius: var(--mint-border-radius);
+        background: var(--tertiary-hover);
       }
     }
   }
