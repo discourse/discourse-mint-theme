@@ -1,8 +1,9 @@
-<div class="search-banner">
-  <SearchBanner />
-</div>
+{{#if searchBannerInstalled}}
+  <div class="search-banner">
+    <SearchBanner />
+  </div>
+{{/if}}
 
-{{log showcasedCategoriesInstalled}}
 {{#if showcasedCategoriesInstalled}}
   <TwoTopicList />
 {{/if}}
