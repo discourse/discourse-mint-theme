@@ -2,11 +2,11 @@ import { getOwner } from "discourse-common/lib/get-owner";
 
 export default {
   setupComponent(attrs, component) {
-    if (getOwner(this).lookup("component:two-topic-list")) {
+    if (getOwner(this).resolveRegistration("component:two-topic-list")) {
       component.set("showcasedCategoriesInstalled", true);
     }
 
-    if (getOwner(this).lookup("component:search-banner")) {
+    if (getOwner(this).resolveRegistration("component:search-banner")) {
       component.set("searchBannerInstalled", true);
     }
   },
