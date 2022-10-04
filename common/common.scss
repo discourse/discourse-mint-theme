@@ -386,3 +386,19 @@ summary.select-kit-header.single-select-header.dropdown-select-box-header {
     border: 1px dashed var(--tertiary);
   }
 }
+
+// Control order of plugin connectors
+.search-banner {
+  display: none;
+}
+
+.showcased-topic-list {
+  display: none;
+}
+
+.mint-component-extensions {
+  .search-banner,
+  .showcased-topic-list {
+    display: block;
+  }
+}
