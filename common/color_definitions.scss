@@ -1,0 +1,5 @@
+$color-circle-gradient: dark-light-choose(#e5f8ff, #2c2c2c);
+
+:root {
+  --color-circle-gradient: #{$color-circle-gradient};
+}
