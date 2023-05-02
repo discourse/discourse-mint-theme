@@ -1,7 +1,7 @@
 {
   "name": "Mint",
   "about_url": "https://meta.discourse.org/t/mint-a-modern-theme-for-discourse/202822",
-  "license_url": "https://github.com/discourse/discourse-mint-theme/blob/main/LICENSE",
+  "license_url": "https://github.com/comses/discourse-mint-theme/blob/main/LICENSE",
   "color_schemes": {
     "mint-light": {
       "primary": "454545",
@@ -19,7 +19,12 @@
       "highlight": "b2b235"
     }
   },
+  "assets": {
+    "montserrat-md": "assets/fonts/Montserrat-Medium.ttf",
+    "open-sans-light": "assets/fonts/OpenSans-Light.ttf"
+  },
   "components": [
+    "https://github.com/discourse/discourse-custom-header-links",
     "https://github.com/discourse/discourse-showcased-categories.git",
     "https://github.com/discourse/discourse-search-banner.git"
   ]

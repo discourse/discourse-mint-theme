@@ -1,0 +1,20 @@
+// Custom styling on top of discourse-mint
+
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url($montserrat-md) format("ttf");
+}
+
+@font-face {
+  font-family: "OpenSans-Light";
+  src: url($open-sans-light) format("ttf");
+}
+
+$font-open-sans: "Open Sans", sans-serif;
+$font-montserrat: "Montserrat", serif;
+
+
+:root {
+  --heading-font-family: $font-montserrat;
+  --font-family: $font-open-sans;
+}
