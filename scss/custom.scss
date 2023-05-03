@@ -1,5 +1,6 @@
 // Custom styling on top of discourse-mint
 
+// fonts
 @font-face {
   font-family: "OpenSans-Light";
   src: url($open-sans-light) format("ttf");
@@ -20,4 +21,14 @@ $font-mittelschrift: "Alte DIN 1451 Mittelschrift", sans-serif;
 
 h1, h2, h3, h4 {
   font-family: $font-mittelschrift;
+}
+
+// custom header links - https://meta.discourse.org/t/custom-header-links/90588
+.custom-header-links .headerLink a {
+  color: var(--primary-high);
+  font-size: 1.1rem;
+  &:hover {
+    color: var(--primary);
+    text-decoration: underline;
+  }
 }
