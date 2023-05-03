@@ -20,8 +20,8 @@
     }
   },
   "assets": {
-    "montserrat-md": "assets/fonts/Montserrat-Medium.ttf",
-    "open-sans-light": "assets/fonts/OpenSans-Light.ttf"
+    "open-sans-light": "assets/fonts/OpenSans-Light.ttf",
+    "alte-din-1451-mittelschrift": "assets/fonts/Alte-DIN-1451-Mittelschrift.ttf.woff"
   },
   "components": [
     "https://github.com/discourse/discourse-custom-header-links",
