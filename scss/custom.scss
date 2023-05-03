@@ -7,11 +7,11 @@
 
 @font-face {
   font-family: "Alte-DIN-1451-Mittelschrift";
-  src: url("../assets/fonts/Alte-DIN-1451-Mittelschrift.ttf.woff") format("woff");
+  src: url($alte-din-1451-mittelschrift) format("ttf");
 }
 
 $font-open-sans: "Open Sans", sans-serif;
-$font-mittelschrift: "Alte-DIN-1451-Mittelschrift", sans-serif;
+$font-mittelschrift: "Alte DIN 1451 Mittelschrift", sans-serif;
 
 
 :root {

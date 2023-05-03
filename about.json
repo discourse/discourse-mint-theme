@@ -21,7 +21,7 @@
   },
   "assets": {
     "open-sans-light": "assets/fonts/OpenSans-Light.ttf",
-    "alte-din-1451-mittelschrift": "assets/fonts/Alte-DIN-1451-Mittelschrift.ttf.woff"
+    "alte-din-1451-mittelschrift": "assets/fonts/alte-din-1451-mittelschrift.regular.ttf"
   },
   "components": [
     "https://github.com/discourse/discourse-custom-header-links",
