@@ -1,0 +1,33 @@
+html body.has-sidebar-page.has-full-page-chat {
+  #main-outlet-wrapper {
+    gap: 2em;
+  }
+  #main-outlet {
+    padding: 0 !important;
+  }
+}
+
+.chat-composer__wrapper {
+  background: transparent;
+}
+
+.full-page-chat .chat-full-page-header {
+  background: var(--primary-very-low);
+}
+
+.desktop-view .has-full-page-chat {
+  .chat-channel {
+    height: calc(100vh - (var(--header-offset) + 3em));
+  }
+}
+
+.chat-message-container,
+.chat-transcript {
+  background: transparent;
+}
+
+.chat-drawer .chat-drawer-container {
+  border-radius: var(--mint-border-radius) var(--mint-border-radius) 0 0;
+  box-shadow: 0 8px 60px 0 rgba(103, 151, 255, 0.1),
+    0 12px 90px 0 rgba(133, 255, 103, 0.1);
+}

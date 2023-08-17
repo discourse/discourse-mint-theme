@@ -8,7 +8,9 @@
       "secondary": "F6FBFC",
       "tertiary": "4F8A7C",
       "header_background": "ffffff",
-      "header_primary": "111111"
+      "header_primary": "111111",
+      "selected": "e3efec",
+      "hover": "e3efec"
     },
     "mint-dark": {
       "primary": "e0e0e0",
@@ -16,7 +18,9 @@
       "tertiary": "4F8A7C",
       "header_background": "202020",
       "header_primary": "e0e0e0",
-      "highlight": "b2b235"
+      "highlight": "b2b235",
+      "selected": "1c302b",
+      "hover": "1c302b"
     }
   },
   "components": [
