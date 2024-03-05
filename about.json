@@ -1,14 +1,26 @@
 {
   "name": "Mint",
-  "about_url": null,
-  "license_url": null,
+  "about_url": "https://meta.discourse.org/t/mint-a-modern-theme-for-discourse/202822",
+  "license_url": "https://github.com/discourse/discourse-mint-theme/blob/main/LICENSE",
   "color_schemes": {
-    "mint": {
+    "mint-light": {
       "primary": "454545",
       "secondary": "F6FBFC",
       "tertiary": "2368a2",
       "header_background": "ffffff",
-      "header_primary": "111111"
+      "header_primary": "111111",
+      "selected": "e3efec",
+      "hover": "e3efec"
+    },
+    "mint-dark": {
+      "primary": "e0e0e0",
+      "secondary": "2d2d2d",
+      "tertiary": "4F8A7C",
+      "header_background": "202020",
+      "header_primary": "e0e0e0",
+      "highlight": "b2b235",
+      "selected": "1c302b",
+      "hover": "1c302b"
     }
   },
   "components": [

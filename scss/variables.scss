@@ -1,5 +1,16 @@
-@mixin border-radius {
-  border-radius: 10px;
+@mixin mint-card-bg {
+  background: var(--primary-very-low);
+
+  @media (prefers-color-scheme: light) {
+    background: var(--header_background);
+  }
+}
+
+:root {
+  --mint-border-radius: 10px;
+  --mint-hover-shadow: 4px 4px var(--tertiary-high);
+  --mint-color-mint: #75bdad;
+  --mint-color-blue: #e5f8ff;
 }
 
 $color-white: #ffffff;
@@ -7,3 +18,14 @@ $color-black: #000000;
 $color-box-shadow: #afafaf;
 $color-primary: #2368a2;
 $color-blue: #e5f8ff;
+
+$color-square-gradient: linear-gradient(
+  4deg,
+  rgba(143, 236, 202, 0.29) 55%,
+  rgba(74, 247, 255, 0.08) 100%
+);
+$color-square-webkit-gradient: -webkit-linear-gradient(
+  4deg,
+  rgba(143, 236, 202, 0.29) 55%,
+  rgba(74, 247, 255, 0.08) 100%
+);

@@ -1,10 +1,46 @@
-@import 'variables';
+@import "variables";
 
 body:not(.navigation-categories):not(.navigation-topics) #main-outlet {
-  @include border-radius;
-  box-shadow: 0 8px 60px 0 rgba(103, 151, 255, .10), 0 12px 90px 0 rgba(133, 255, 103, .10);
+  border-radius: var(--mint-border-radius);
+  box-shadow: 0 8px 60px 0 rgba(103, 151, 255, 0.1),
+    0 12px 90px 0 rgba(133, 255, 103, 0.1);
   padding: 2em;
-  background-color: $color-white;
+  @include mint-card-bg;
   border-top: 8px solid $tertiary;
-  margin-top: .8em;
+  margin-top: 1em;
+}
+
+.boxed {
+  &.white {
+    @include mint-card-bg;
+  }
+}
+
+#main-outlet:after {
+  content: "";
+  display: block;
+  position: fixed;
+  z-index: -1;
+  width: 500px;
+  height: 500px;
+  border-radius: 2000px;
+  background: var(--color-circle-gradient);
+  right: 1px;
+  top: -57px;
+}
+
+#main-outlet:before {
+  content: "";
+  display: block;
+  position: fixed;
+  z-index: -1;
+  width: 300px;
+  height: 300px;
+  border-radius: 30px;
+  background: $color-square-webkit-gradient;
+  background: $color-square-gradient;
+  left: 70px;
+  top: 350px;
+  transform: rotate(74deg);
+  transform-origin: 0 100%;
 }

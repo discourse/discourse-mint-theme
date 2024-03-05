@@ -1,0 +1,27 @@
+:root {
+  --d-sidebar-highlight-background: var(--tertiary-low);
+  --d-sidebar-highlight-hover-background: var(--tertiary);
+  --d-sidebar-header-icon-color: var(--tertiary);
+}
+
+#main-outlet-wrapper {
+  .sidebar-wrapper {
+    background-color: var(--primary-very-low);
+    box-shadow: 0 8px 60px 0 rgba(103, 151, 255, 0.1),
+      0 12px 90px 0 rgba(133, 255, 103, 0.1);
+    margin-top: 1em;
+    border-top: 8px solid var(--tertiary);
+    border-radius: var(--mint-border-radius);
+    height: calc(
+      var(--composer-vh, var(--1dvh)) * 100 - var(--header-offset, 0px) - 3em
+    );
+    top: calc(var(--header-offset) + 1em);
+    .sidebar-container {
+      border: none;
+    }
+  }
+}
+
+.sidebar-footer-wrapper {
+  background: var(--primary-very-low);
+}
