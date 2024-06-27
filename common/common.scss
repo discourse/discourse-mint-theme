@@ -9,11 +9,16 @@
 
 :root {
   --d-input-border-radius: var(--mint-border-radius);
+  --d-nav-underline-height: 0;
 }
 
 .d-header {
   height: 5em;
   box-shadow: none;
+}
+
+.d-header-mode .bootstrap-mode {
+  color: var(--secondary);
 }
 
 .alert.alert-info {
@@ -373,13 +378,16 @@ summary.select-kit-header.single-select-header.dropdown-select-box-header {
   display: none;
 }
 
-.showcased-topic-list {
+.custom-homepage-columns {
   display: none;
 }
 
 .mint-component-extensions {
-  .search-banner,
-  .showcased-topic-list {
+  .search-banner {
     display: block;
+  }
+
+  .custom-homepage-columns {
+    display: flex;
   }
 }
