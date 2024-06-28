@@ -112,9 +112,7 @@ a {
 }
 
 .category-boxes {
-  display: grid;
   grid-gap: 2em;
-  grid-template-columns: 32% 32% 32%;
   border-radius: var(--mint-border-radius);
   .category-box {
     width: 100%;
