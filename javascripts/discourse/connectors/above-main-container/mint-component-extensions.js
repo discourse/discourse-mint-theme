@@ -1,4 +1,4 @@
-import { getOwner } from "discourse-common/lib/get-owner";
+import { getOwner } from "discourse/lib/get-owner";
 
 export default {
   setupComponent(attrs, component) {
