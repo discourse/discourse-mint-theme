@@ -26,5 +26,6 @@
   "components": [
     "https://github.com/discourse/discourse-showcased-categories.git",
     "https://github.com/discourse/discourse-search-banner.git"
-  ]
+  ],
+  "screenshots": ["screenshots/light.png", "screenshots/dark.png"]
 }
