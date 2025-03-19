@@ -2,6 +2,7 @@ html body.has-sidebar-page.has-full-page-chat {
   #main-outlet-wrapper {
     gap: 2em;
   }
+
   #main-outlet {
     padding: 0 !important;
   }
@@ -28,6 +29,7 @@ html body.has-sidebar-page.has-full-page-chat {
 
 .chat-drawer .chat-drawer-container {
   border-radius: var(--mint-border-radius) var(--mint-border-radius) 0 0;
-  box-shadow: 0 8px 60px 0 rgba(103, 151, 255, 0.1),
+  box-shadow:
+    0 8px 60px 0 rgba(103, 151, 255, 0.1),
     0 12px 90px 0 rgba(133, 255, 103, 0.1);
 }
