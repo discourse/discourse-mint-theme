@@ -1,6 +1,6 @@
 html body.has-sidebar-page.has-full-page-chat {
   #main-outlet-wrapper {
-    gap: 2em;
+    gap: 0 2em;
   }
 
   #main-outlet {
@@ -18,7 +18,7 @@ html body.has-sidebar-page.has-full-page-chat {
 
 .desktop-view .has-full-page-chat {
   .chat-channel {
-    height: calc(100vh - (var(--header-offset) + 3em));
+    height: calc(100vh - (var(--header-offset) + 6em));
   }
 }
 
