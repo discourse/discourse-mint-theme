@@ -208,13 +208,16 @@ a {
   }
 }
 
+.list-controls {
+  margin-top: 1em;
+}
+
 .list-controls .combo-box .combo-box-header {
   border: none;
   border-radius: var(--mint-border-radius);
 
   @include mint-card-bg;
 }
-
 .menu-panel .panel-body-bottom .btn {
   svg {
     color: var(--tertiary);
@@ -384,10 +387,6 @@ a:hover {
   color: var(--primary-very-low);
 }
 
-.btn[href] {
-  color: var(--secondary);
-}
-
 summary.select-kit-header.single-select-header.dropdown-select-box-header {
   padding: 0.5em;
 }
@@ -400,20 +399,5 @@ summary.select-kit-header.single-select-header.dropdown-select-box-header {
 
   .search-advanced-filters {
     border: 1px dashed var(--tertiary);
-  }
-}
-
-// Control order of plugin connectors
-.search-banner {
-  display: none;
-}
-
-.mint-component-extensions {
-  .search-banner {
-    display: block;
-  }
-
-  .custom-homepage-columns {
-    display: flex;
   }
 }
