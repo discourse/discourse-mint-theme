@@ -23,8 +23,6 @@
       "hover": "1c302b"
     }
   },
-  "components": [
-    "https://github.com/discourse/discourse-search-banner.git"
-  ],
+  "components": ["https://github.com/discourse/discourse-search-banner.git"],
   "screenshots": ["screenshots/light.png", "screenshots/dark.png"]
 }
