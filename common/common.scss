@@ -25,54 +25,6 @@
   border-radius: 10px;
 }
 
-.custom-homepage-columns {
-  margin: 2em 0 2em 0;
-  padding: 0;
-  display: none;
-
-  .col {
-    position: relative;
-    border-radius: var(--mint-border-radius);
-    padding: 2em 2em 1em;
-    border-top: 8px solid var(--tertiary);
-    box-shadow:
-      0 8px 60px 0 rgb(103, 151, 255, 0.1),
-      0 12px 90px 0 rgb(133, 255, 103, 0.1);
-
-    @include mint-card-bg;
-
-    .header-wrapper {
-      background-color: transparent;
-
-      a h2 {
-        color: var(--primary);
-      }
-
-      .btn-primary {
-        display: none;
-      }
-    }
-
-    .btn-more {
-      color: var(--secondary);
-      background: var(--tertiary);
-      transition: all 0.3s linear;
-      border-radius: var(--mint-border-radius);
-      text-transform: uppercase;
-      border: 1px solid var(--tertiary);
-
-      &:hover {
-        color: var(--secondary);
-        background: var(--tertiary-hover);
-      }
-    }
-  }
-
-  .loading-container:not(:has(.spinner)) {
-    min-height: unset;
-  }
-}
-
 .navigation-categories .search-banner {
   border-radius: var(--mint-border-radius);
   height: 350px;
@@ -206,6 +158,10 @@ a {
       border-radius: 0;
     }
   }
+}
+
+.list-controls {
+  margin-top: 1em;
 }
 
 .list-controls .combo-box .combo-box-header {
@@ -384,10 +340,6 @@ a:hover {
   color: var(--primary-very-low);
 }
 
-.btn[href] {
-  color: var(--secondary);
-}
-
 summary.select-kit-header.single-select-header.dropdown-select-box-header {
   padding: 0.5em;
 }
@@ -400,20 +352,5 @@ summary.select-kit-header.single-select-header.dropdown-select-box-header {
 
   .search-advanced-filters {
     border: 1px dashed var(--tertiary);
-  }
-}
-
-// Control order of plugin connectors
-.search-banner {
-  display: none;
-}
-
-.mint-component-extensions {
-  .search-banner {
-    display: block;
-  }
-
-  .custom-homepage-columns {
-    display: flex;
   }
 }
