@@ -6,35 +6,37 @@ A modern theme for Discourse with a hint of mint.
 
 ### Discourse Settings
 
-Following setting changes are required for this theme to render properly:
+On the page **Admin > Interface & layout** (`/admin/config/interface`), the following changes are required for this theme to render properly:
 
-- `top menu` needs to be set to **category, latest, new, unread, top**
-- `desktop category page style` needs to be set to **Boxes with Subcategories**
+- **Top menu** needs to be set to `categories, latest, new, unread, top`
+- **Desktop category page style** needs to be set to `Boxes with Subcategories`
 
-### Discourse Search Banner
+![interface and layout](images/interface-and-layout.jpg)
 
-In the options for the `discourse-search-banner` theme component, following changes are required for this theme to render properly:
+### Welcome Banner
 
-- `show-on` options needs to be set to **homepage**
-- ~~`plugin-outlet` options needs to be set to **below-site-header**~~
-    > As of Oct. 4th, 2022: The outlet will be auto-set by the Mint theme
-- `background image` can be set as per your requirement
+On the page **Admin > Welcome banner** (`/admin/config/welcome-banner`), the following changes are required for this theme to render properly:
+
+* **Page visibility** option needs to be set to `Homepage only`
+* **Location** should be set to `Below site header`
+
+![welcome banner settings](images/welcome-banner-settings.jpg)
 
 ## 🖼️ Screenshots
 
 ### Homepage (categories)
 
-![main](.github/images/main.jpg)
-![categories](.github/images/categories.jpg)
+![main](images/main.jpg)
+![categories](images/categories.jpg)
 
 ### Latest
 
-![main](.github/images/topic-list.jpg)
+![topic list](images/topic-list.jpg)
 
 ### Topic
 
-![main](.github/images/topic.jpg)
+![topic](images/topic.jpg)
 
 ### Advanced Search
 
-![main](.github/images/advanced-search.jpg)
+![advanced search](images/advanced-search.jpg)
