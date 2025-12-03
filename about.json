@@ -24,5 +24,5 @@
       "hover": "1c302b"
     }
   },
-  "screenshots": ["screenshots/dark.webp", "screenshots/light.webp"]
+  "screenshots": ["screenshots/light.webp", "screenshots/dark.webp"]
 }
