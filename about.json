@@ -1,5 +1,6 @@
 {
   "name": "Mint Theme",
+  "authors": "Discourse",
   "about_url": "https://meta.discourse.org/t/mint-a-modern-theme-for-discourse/202822",
   "license_url": "https://github.com/discourse/discourse-mint-theme/blob/main/LICENSE",
   "color_schemes": {
@@ -23,6 +24,5 @@
       "hover": "1c302b"
     }
   },
-  "components": ["https://github.com/discourse/discourse-search-banner.git"],
-  "screenshots": ["screenshots/light.png", "screenshots/dark.png"]
+  "screenshots": ["screenshots/light.webp", "screenshots/dark.webp"]
 }

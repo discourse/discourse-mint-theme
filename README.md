@@ -2,39 +2,54 @@
 
 A modern theme for Discourse with a hint of mint.
 
-## ⚙️ Configuration
+## ⚙️ Theme configuration
 
-### Discourse Settings
+Change the following settings for this theme to render properly.
 
-Following setting changes are required for this theme to render properly:
+### Edit Theme
 
-- `top menu` needs to be set to **category, latest, new, unread, top**
-- `desktop category page style` needs to be set to **Boxes with Subcategories**
+Go to **Admin > Themes & components** (`/admin/config/customize/themes`) page to edit Mint theme.
 
-### Discourse Search Banner
+- in **Dark color palette** dropdown select `mint-dark`
 
-In the options for the `discourse-search-banner` theme component, following changes are required for this theme to render properly:
+  ![theme dark color palette](/images/theme-dark-color-palette.webp)
 
-- `show-on` options needs to be set to **homepage**
-- ~~`plugin-outlet` options needs to be set to **below-site-header**~~
-    > As of Oct. 4th, 2022: The outlet will be auto-set by the Mint theme
-- `background image` can be set as per your requirement
+### Interface & layout
+
+Go to **Admin > Interface & layout** (`/admin/config/interface`) page.
+
+- **Top menu** needs to be set to `categories, latest, new, unread, top`
+- **Desktop category page style** needs to be set to `Boxes with Subcategories`
+
+   ![interface and layout](images/interface-and-layout.webp)
+
+### Welcome Banner
+
+Go to **Admin > Welcome banner** (`/admin/config/welcome-banner`) page.
+
+- in **Enabled on themes...** dropdown select `Mint Theme`
+
+  ![welcome banner themes](images/welcome-banner-enable.webp)
+
+- in **Page visibility** dropdown select `Homepage only`
+- in **Location** dropdown select `Below site header`
+
+  ![welcome banner settings](images/welcome-banner-settings.webp)
 
 ## 🖼️ Screenshots
 
 ### Homepage (categories)
 
-![main](.github/images/main.jpg)
-![categories](.github/images/categories.jpg)
+![main](images/main.webp)
+![categories](images/categories.webp)
 
 ### Latest
 
-![main](.github/images/topic-list.jpg)
+![topic list](images/topic-list.webp)
 
 ### Topic
 
-![main](.github/images/topic.jpg)
-
+![topic](images/topic.webp)
 ### Advanced Search
 
-![main](.github/images/advanced-search.jpg)
+![advanced search](images/advanced-search.webp)
