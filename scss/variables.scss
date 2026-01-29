@@ -2,6 +2,8 @@
   background: var(--primary-very-low);
 
   @media (prefers-color-scheme: light) {
+    // incorrect rule, see: https://github.com/stylelint-scss/stylelint-config-recommended-scss/issues/369
+    /* stylelint-disable-next-line no-invalid-position-declaration */
     background: var(--header_background);
   }
 }
