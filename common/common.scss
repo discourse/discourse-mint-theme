@@ -50,7 +50,7 @@ input[type="color"]:focus,
 }
 
 .alert.alert-info {
-  border-radius: 10px;
+  border-radius: var(--mint-border-radius);
 }
 
 .custom-homepage-columns {
@@ -60,9 +60,8 @@ input[type="color"]:focus,
     border-radius: var(--mint-border-radius);
     @include mint-card-bg;
     padding: 2em 2em 1em;
-    border-top: 8px solid $tertiary;
-    box-shadow: 0 8px 60px 0 rgba(103, 151, 255, 0.1),
-      0 12px 90px 0 rgba(133, 255, 103, 0.1);
+    border-top: 2px solid $tertiary;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
     .header-wrapper {
       color: var(--primary);
       background-color: transparent;
@@ -73,28 +72,18 @@ input[type="color"]:focus,
     .btn-more {
       color: var(--secondary);
       background: var(--tertiary);
-      transition: all 0.3s linear;
+      transition: all 0.2s ease;
       border-radius: var(--mint-border-radius);
       text-transform: uppercase;
       border: 1px solid var(--tertiary);
       &:hover {
         background: var(--tertiary);
         color: var(--secondary);
-        box-shadow: 4px 4px var(--mint-hover-shadow);
-        transition: 0.3s;
+        box-shadow: var(--mint-hover-shadow);
         border-radius: var(--mint-border-radius);
       }
     }
   }
-}
-
-.navigation-categories .search-banner {
-  border-radius: var(--mint-border-radius);
-  height: 350px;
-  box-sizing: border-box;
-  padding: 2.5em 0 3em;
-  margin: 1em auto;
-  max-width: 1110px;
 }
 
 .category-box-inner {
@@ -104,11 +93,10 @@ input[type="color"]:focus,
 .navigation-topics {
   .container.list-container {
     border-radius: var(--mint-border-radius);
-    box-shadow: 0 8px 60px 0 rgba(103, 151, 255, 0.1),
-      0 12px 90px 0 rgba(133, 255, 103, 0.1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
     padding: 2em;
     @include mint-card-bg;
-    border-top: 8px solid $tertiary;
+    border-top: 2px solid $tertiary;
     margin-top: 0.8em;
   }
 }
@@ -145,10 +133,10 @@ a {
     margin: 0;
     overflow: hidden;
     border: none;
-    border-top: 8px solid;
+    border-top: 2px solid;
     background: var(--secondary);
     border-radius: var(--mint-border-radius);
-    box-shadow: 0px 2px 3px 0px rgba(2, 47, 57, 0.14);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
     .category-box-inner {
       border: none;
       padding: 0;
@@ -157,7 +145,7 @@ a {
       }
     }
     &:hover {
-      box-shadow: 0px 40px 30px 0px rgba(2, 47, 57, 0.1);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
       transform: translateY(-2px);
     }
   }
@@ -180,7 +168,7 @@ a {
 #create-topic {
   color: var(--secondary);
   background: var(--tertiary);
-  transition: all 0.3s linear;
+  transition: all 0.2s ease;
   border-radius: var(--mint-border-radius);
   text-transform: uppercase;
   border: 2px solid var(--tertiary);
@@ -191,7 +179,6 @@ a {
     background: var(--tertiary);
     color: var(--secondary);
     box-shadow: var(--mint-hover-shadow);
-    transition: all 0.3s linear;
     border-radius: var(--mint-border-radius);
     .fa {
       color: var(--secondary);
@@ -236,17 +223,17 @@ a {
   border-radius: var(--mint-border-radius);
   &:hover {
     border-radius: var(--mint-border-radius);
-    transition: all 0.3s linear;
+    transition: all 0.2s ease;
     background-color: transparent;
     color: var(--tertiary);
     border: 1px dashed var(--tertiary);
   }
   &.active {
     border-radius: var(--mint-border-radius);
-    transition: all 0.3s linear;
-    background: var(--mint-color-mint);
+    transition: all 0.2s ease;
+    background: var(--tertiary);
     color: var(--secondary);
-    border: 1px solid var(--mint-color-mint);
+    border: 1px solid var(--tertiary);
   }
 }
 
@@ -277,7 +264,7 @@ a {
     color: var(--secondary);
     background: var(--tertiary-hover);
     border: 1px solid var(--tertiary-hover);
-    border-radius: 5px;
+    border-radius: var(--mint-border-radius);
   }
 }
 
@@ -290,7 +277,7 @@ a {
 .discourse-no-touch .btn.btn-hover {
   color: var(--secondary);
   background: var(--tertiary-hover);
-  border-radius: 5px;
+  border-radius: var(--mint-border-radius);
   .fa {
     color: var(--secondary);
   }
@@ -306,7 +293,7 @@ a {
 .btn-default {
   color: var(--secondary);
   background: var(--tertiary);
-  transition: all 0.3s linear;
+  transition: all 0.2s ease;
   border-radius: var(--mint-border-radius);
   text-transform: uppercase;
   border: 1px solid var(--tertiary);
@@ -363,11 +350,6 @@ a:hover {
   .btn-primary {
     border-radius: var(--mint-border-radius);
   }
-}
-
-.custom-search-banner-wrap h1,
-.custom-search-banner-wrap p {
-  color: var(--primary-very-low);
 }
 
 .btn[href] {

@@ -1,25 +1,24 @@
 {
-  "name": "Mint",
+  "name": "DIA",
   "about_url": "https://meta.discourse.org/t/mint-a-modern-theme-for-discourse/202822",
   "license_url": "https://github.com/discourse/discourse-mint-theme/blob/main/LICENSE",
   "color_schemes": {
-    "mint-light": {
-      "primary": "454545",
-      "secondary": "F6FBFC",
-      "tertiary": "4F8A7C",
-      "header_background": "ffffff",
-      "header_primary": "111111"
-    },
-    "mint-dark": {
+    "dia-dark": {
       "primary": "e0e0e0",
-      "secondary": "2d2d2d",
-      "tertiary": "4F8A7C",
-      "header_background": "202020",
-      "header_primary": "e0e0e0"
+      "secondary": "1b1b1b",
+      "tertiary": "b8ff9d",
+      "header_background": "000000",
+      "header_primary": "ffffff"
+    },
+    "dia-light": {
+      "primary": "000000",
+      "secondary": "f1f1f1",
+      "tertiary": "4caf50",
+      "header_background": "ffffff",
+      "header_primary": "000000"
     }
   },
   "components": [
-    "https://github.com/discourse/discourse-showcased-categories.git",
-    "https://github.com/discourse/discourse-search-banner.git"
+    "https://github.com/discourse/discourse-showcased-categories.git"
   ]
 }

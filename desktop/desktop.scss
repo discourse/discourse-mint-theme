@@ -2,11 +2,10 @@
 
 body:not(.navigation-categories):not(.navigation-topics) #main-outlet {
   border-radius: var(--mint-border-radius);
-  box-shadow: 0 8px 60px 0 rgba(103, 151, 255, 0.1),
-    0 12px 90px 0 rgba(133, 255, 103, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
   padding: 2em;
   @include mint-card-bg;
-  border-top: 8px solid $tertiary;
+  border-top: 2px solid $tertiary;
   margin-top: 0.8em;
 }
 

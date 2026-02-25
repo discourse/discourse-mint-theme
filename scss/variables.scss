@@ -7,24 +7,8 @@
 }
 
 :root {
-  --mint-border-radius: 10px;
-  --mint-hover-shadow: 4px 4px var(--tertiary-high);
-  --mint-color-mint: #75bdad;
-  --mint-color-blue: #e5f8ff;
-  --mint-color-square-gradient: linear-gradient(
-    4deg,
-    ter rgba(143, 236, 202, 0.29) 55%,
-    rgba(74, 247, 255, 0.08) 100%
-  );
+  --mint-border-radius: 0px;
+  --mint-hover-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  --mint-color-mint: #b8ff9d;
+  --mint-color-surface: #1b1b1b;
 }
-
-$color-square-gradient: linear-gradient(
-  4deg,
-  rgba(143, 236, 202, 0.29) 55%,
-  rgba(74, 247, 255, 0.08) 100%
-);
-$color-square-webkit-gradient: -webkit-linear-gradient(
-  4deg,
-  rgba(143, 236, 202, 0.29) 55%,
-  rgba(74, 247, 255, 0.08) 100%
-);
