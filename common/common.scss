@@ -41,8 +41,7 @@
 .navigation-topics {
   .container.list-container {
     border-radius: var(--mint-border-radius);
-    box-shadow:
-      0 8px 60px 0 rgb(103, 151, 255, 0.1),
+    box-shadow: 0 8px 60px 0 rgb(103, 151, 255, 0.1),
       0 12px 90px 0 rgb(133, 255, 103, 0.1);
     padding: 2em;
     border-top: 8px solid var(--tertiary);
@@ -247,7 +246,6 @@ a {
 .discourse-no-touch .btn:not(.btn-flat).btn-hover {
   color: var(--secondary);
   background: var(--tertiary-hover);
-  border-radius: 5px;
 
   .fa {
     color: var(--secondary);
@@ -265,12 +263,18 @@ a {
   color: var(--secondary);
   background: var(--tertiary);
   transition: all 0.3s linear;
-  border-radius: var(--mint-border-radius);
   text-transform: uppercase;
   border: 1px solid var(--tertiary);
 
   .fa {
     color: var(--secondary);
+    transition: all 0.3s linear;
+  }
+
+  &.is-active {
+    .fa {
+      color: var(--tertiary);
+    }
   }
 }
 
@@ -336,8 +340,7 @@ a:hover {
 }
 
 .custom-search-banner-wrap .custom-search-banner-headline,
-.custom-search-banner-wrap h1,
-.custom-search-banner-wrap p {
+.custom-search-banner-wrap {
   color: var(--primary-very-low);
 }
 

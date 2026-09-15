@@ -15,6 +15,10 @@
   --mint-color-blue: #e5f8ff;
 }
 
+body {
+  --d-button-border-radius: var(--mint-border-radius);
+}
+
 $color-square-gradient: linear-gradient(
   4deg,
   rgb(143, 236, 202, 0.29) 55%,
